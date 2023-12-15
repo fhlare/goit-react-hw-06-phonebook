@@ -1,16 +1,12 @@
+import { Container } from "./App.styled";
+import { GlobalStyle } from "./GlobalStyle";
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Container>
+      <h1>Phonebook</h1>
+      <h2>Contacts</h2>
+      <GlobalStyle/>
+    </Container>
   );
 };
