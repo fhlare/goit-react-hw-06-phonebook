@@ -16,4 +16,8 @@ code {
     monospace;
 }
 
+button {
+  cursor: pointer;
+}
+
 `
