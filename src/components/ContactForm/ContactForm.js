@@ -23,7 +23,7 @@ export const ContactForm = () => {
   const newContact= useSelector(state => state.contacts);
 
   const handelSubmit = value => {
-    const sameContact = newContact.some(contact => contact.name === value.name);
+    const sameContact = newContact.some(contact => contact.name.toLowerCase() === value.name.toLowerCase());
     if (sameContact) {
       alert(`${value.name} is alredy contact`);
     } else {
@@ -51,7 +51,7 @@ export const ContactForm = () => {
 
         <FormGroup>
           Number
-          <Field name="number" type="number" />
+          <Field name="number" type="text" />
           <ErrorMessage name="number" component="span" />
         </FormGroup>
 
